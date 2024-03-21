@@ -1,0 +1,49 @@
+.grid-container{
+
+    display: grid;
+     gap: 1rem;
+
+     grid-template-areas:
+    'innernav innernav innernav innernav '
+    ' box1 profile profile profile '
+    ' .  profile profile profile '
+    ' cv  profile profile profile '
+    ' footer footer footer . ';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+#about{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#cv{
+    display:grid;
+    grid-template-areas: 'btn dwnload';
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    grid-area: cv;
+    background-color: #00001b;
+}
+
+#cv p{
+    text-decoration: none;
+    color: #ff7272;
+    font-size: 1rem;
+    font-family: 'classico';
+    font-weight: bold;
+    
+}
+
+#btn{
+    grid-area: btn;
+}
+#dwnload{
+    max-width: 2rem;
+    height: auto;
+    grid-area: dwnload;
+}
