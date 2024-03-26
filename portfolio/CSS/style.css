@@ -45,6 +45,8 @@ ul{
 
 #logo{
 
+    max-width: 4rem;
+    max-height: auto;
     margin-left: 9.5rem;
     text-align: center;
     text-decoration: none;
