@@ -4,14 +4,6 @@ body{
 
 }
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-    '. . . . .'
-     '. . img  . .';
-    row-gap: 5.5rem;
-    justify-items: center;
-  }
   
   ul{
   
@@ -33,13 +25,16 @@ body{
       font-size: 1.5rem;
       text-decoration: none;
       text-align: center;
-      align-items: center;
+      align-items: flex-start;
       margin: 0;
+      border-bottom: solid .1rem #e5f2fd;
   
   }
   
   #logo{
-  
+    
+    max-width: 4rem;
+    max-height: auto;
     font-family: "Pacifico", cursive;
     margin-left: 9.5rem;
     text-align: center;
@@ -71,46 +66,59 @@ body{
       color: #ff7272;
   }
 
-input[type="text"],
-input[type="password"] {
-    max-width: 100%; 
-    margin-bottom: 1rem;
-    border: .1rem solid #ccc;
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+     
+    margin: 1rem;
+    border: .1rem solid #232342;
+    background-color: #cbe7ff00;
+    color: #e5f2fd;
     border-radius: 6px;
+    padding: .8rem;
 }
 
 button {
     font-family: "Roboto", sans-serif;
-    padding: .5rem 1rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
+    margin: 0 auto;
+    background: none;
+    color: #e5f2fd;
+    border: solid .1rem #232342;
     border-radius: 6px;
-    cursor: pointer;
+    padding: .4rem; 
+    font-size: 1rem;
 }
 
 #login{
     
-    width: 120%;
-    background-color: #3333338a;
-    grid-area: img;
-    border: .1rem solid #ff7272;
-    border-radius: 6px;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: solid .3rem #232342;
+    border-left: solid 1rem #232342;
+    border-bottom: solid 1rem #232342;
     
     
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #cbe7ff83;
+    color: #00001b;
+    cursor: pointer;
 }
 
 form {
-    width: 50%;
+
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: .5rem;
     
 }
 
@@ -145,4 +153,10 @@ p{
 
 textarea{
     margin-bottom: .5rem;
+    margin: 1rem;
+    border: .1rem solid #232342;
+    background-color: #cbe7ff00;
+    color: #e5f2fd;
+    border-radius: 6px;
+    padding: .8rem;
 }

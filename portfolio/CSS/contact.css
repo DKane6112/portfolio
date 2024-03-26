@@ -9,7 +9,7 @@ body{
     grid-template-areas: 
     'banner banner banner'
     '. pic form'
-    '. icon .';
+    'icon icon icon';
     align-items: center;
     gap: 1rem;
 }
@@ -36,14 +36,17 @@ ul{
     font-size: 1.5rem;
     text-decoration: none;
     text-align: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
+    border-bottom: solid .1rem #e5f2fd;
     
 
 }
 
 #logo{
 
+    max-width: 4rem;
+    max-height: auto;
     font-family: "Pacifico", cursive;
     margin-left: 9.5rem;
     text-align: center;
@@ -87,6 +90,7 @@ h1{
 #text{
     
     grid-area: banner;
+    margin: 1rem;
 }
 
 #pic{
@@ -102,20 +106,27 @@ h1{
 
 
 form{
+    display: flex;
+    flex-direction: column;
     max-width: 80%;
     grid-area: form;
 }
 
 fieldset{
-    border: .1rem solid #ff7272;
-    border-radius: 1rem;
+    border: solid .3rem #232342;
+    border-left: solid 1rem #232342;
+    border-bottom: solid 1rem #232342;
+    
     margin-bottom: 5pt;
 }
 
 input{
+    
     padding: .4rem;
     border-radius: 1rem;
-    background-color: #cbe7ff;
+    border: .1rem solid #232342;
+    background-color: #cbe7ff00;
+    color: #e5f2fd;
     max-width: 80%;
     margin-bottom: 5%;
 }
@@ -123,30 +134,30 @@ input{
 textarea{
     padding: .4rem;
     border-radius: 1rem;
-    background-color: #cbe7ff;
+    border: .1rem solid #232342;
+    background-color: #cbe7ff00;
+    color: #e5f2fd;
     max-width: 80%;
     margin-bottom: 5%;
 }
 
 button{
     font-family: "Roboto", sans-serif;
-    text-align: center;
-    padding: .5rem 1rem;
-    position: relative;
-    left: 35%;
-    border-radius: 1rem;
-    border: none;
-    background-color: #ff7272;
-    color: #00001b;
-    font-weight: bold;
+    margin: 0 auto;
+    background: none;
+    color: #e5f2fd;
+    border: solid .1rem #232342;
+    border-radius: 6px;
+    padding: .3rem; 
     font-size: 1rem;
-    cursor: pointer;
 
 }
 button:hover{
-    background-color: #cbe7ff;
+    background-color: #cbe7ff83;
     color: #00001b;
+    cursor: pointer;
 }
+
 
 .icon{
     max-width: 1.5rem;
@@ -167,6 +178,7 @@ button:hover{
     margin: 0 auto;
     padding: 0;
     grid-area: icon;
+    width: 100%;
   }
   p{
     font-family: "Helvetica", sans-serif;

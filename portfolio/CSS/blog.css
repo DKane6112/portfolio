@@ -2,45 +2,246 @@
 
     display: grid;
     grid-template-areas:
-    '. profile profile profile box1 box1 '
-    '. profile profile profile . . '
-    '  . . footer footer footer footer';
+    '. image .'
+    '. blog . '
+    '  . footer .';
      gap: 1rem;
-     margin: 1rem;
-     grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1fr 1fr;
+     
+     grid-template-columns: .15fr 1fr .15fr;
+     align-items: start;
 }
 
-#about{
+#navbar{
+    border-bottom: solid .1rem #e5f2fd;
+}
+
+#blogstart{
+    grid-area: image;
+    gap: 1rem;
+    margin: 0;
+    margin-top: 2rem;
+    width: 100%;
+    position: relative;
+    
+    
+}
+
+#blogImage{
+    
+    
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 6px;
+    border: solid .1rem #232342;
+    
+    
+}
+
+img{
+    border-radius: 6px;
+}
+
+#blogwelcome{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    max-width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+h1{
+    color: #e5f2fd;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+h2{
+    color: #e5f2fd;
+    font-size: 1.7rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1rem;
+
+}
+
+
+#blog{
+    grid-area: blog;
+    display: flex;
+    align-items: center;
     gap: 1rem;
     
 }
+
+#search ul{
+    flex-direction: column;
+    margin: 0;
+}
+
+#search{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: .5rem;
+    height: 50vh;
+
+}
+
+#searchButton{
+    
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: .1rem;
+
+    
+}
+
+#searchButton:hover{
+    cursor: pointer;
+}
+
+#searchButton img{
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: cover;
+}
+
+#searchBar{
+    
+    color:#e5f2fd;
+    border:none;
+    padding: .2rem;
+    outline: none;
+    height: fit-content;
+    background-color: #00001b;
+    
+}
+
+#searchBar::placeholder{
+    color: #e5f2fdad;
+}
+#searchwrapper{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    height: fit-content;
+    border: .1rem solid #e5f2fd;
+    border-radius: 6px;
+}
+form{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    
+}
 h3{
-    text-align: center;
+    margin: 0;
+    background-color: #00001b;
+    max-width: none;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+h4{
+    padding: .5rem;
+    
 }
 .post{
-    margin: 1rem;
-    border-bottom: .15rem solid #00001b;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: .15rem solid #e5f2fd;
+    
 }
 
 section{
     margin: 0;
+    
 }
 
-button {
-    position: relative;
-    left: 35%;
-    padding: .5rem 1rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
+#posts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    margin:.1rem;
+}
+
+#months{
+    width: 100%;
+    border: solid .1rem #232342;
+    border-left: solid .5rem #232342;
+    border-bottom: solid .5rem #232342;
+    
+}
+
+#monthselector{
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+    background-color: #00001b; 
+    border:solid .1rem #232342;
+    border-left: none;   
+    color: #e5f2fd;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+#months ul{
+    display: flex;
+    border-right: solid .1rem #232342;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin: 0;
+    padding: .5rem;
+}   
+
+#months ul li{
+    list-style: none;
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.blogbutton{
+    margin: 0 auto;
+    background: none;
+    color: #e5f2fd;
+    border: solid .1rem #232342;
     border-radius: 6px;
+    padding: .3rem; 
+    font-size: 1rem;
+}
+
+.blogbutton:hover{
+    background-color: #cbe7ff83;
+    color: #00001b;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #555;
+#figbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
+#figbuttons button{
+    padding: .5rem;
+    color: #e5f2fd;
+    font-size: 1.3rem;
+    margin: 0;
+}
