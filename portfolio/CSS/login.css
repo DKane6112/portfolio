@@ -92,7 +92,7 @@ button {
 #login{
     
     margin: 0 auto;
-    width: 30%;
+    
     height: auto;
     position: absolute;
     top: 50%;
@@ -115,7 +115,7 @@ button:hover {
 form {
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     margin: 0 auto;
     padding: .5rem;
@@ -123,10 +123,9 @@ form {
 }
 
 label{
-    
-    font-size: 1rem;
+    float: left;
+    font-size: .8rem;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
     color: #cbe7ff;
 }
 
@@ -148,6 +147,7 @@ p{
     gap: 1rem;
     margin: 0 auto;
     width: 70%;
+    align-items: center;
     
 }
 
@@ -159,4 +159,12 @@ textarea{
     color: #e5f2fd;
     border-radius: 6px;
     padding: .8rem;
+}
+
+#imgUpload{
+    color:#cbe7ff;
+    background-color: #00001b;
+    border: none;
+    border-radius: 6px;
+    
 }
